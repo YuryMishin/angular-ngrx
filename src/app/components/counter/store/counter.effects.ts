@@ -10,15 +10,15 @@ import {
   reset,
   saveError,
   saveSuccess,
-} from '../actions/counter.actions';
+} from './counter.actions';
 import { CounterApiService } from '../services/counter-api.service';
-import { AppState } from '../shared/app-state';
+import { Appstate } from '../../../shared/store/appstate';
 
 @Injectable()
 export class CounterEffects {
   constructor(
     private actions$: Actions,
-    private store$: Store<AppState>,
+    private store$: Store<Appstate>,
     private counterApiService: CounterApiService,
   ) {}
 
