@@ -1,8 +1,8 @@
 import { ActionReducerMap } from '@ngrx/store';
 
-import { AppState } from '../shared/app-state';
+import { Appstate } from '../../../shared/store/appstate';
 import { counterReducer } from './counter.reducer';
 
-export const reducers: ActionReducerMap<AppState> = {
+export const reducers: ActionReducerMap<Appstate> = {
   counter: counterReducer,
 };

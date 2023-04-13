@@ -11,13 +11,13 @@ import {
   reset,
   saveError,
   saveSuccess,
-} from '../actions/counter.actions';
-import { CounterApiService } from '../services/counter-api.service';
-import { AppState } from '../shared/app-state';
+} from './counter.actions';
+import { CounterApiService } from '../../../core/counter/counter-api.service';
+import { Appstate } from '../../../shared/store/appstate';
 import { CounterEffects } from './counter.effects';
 
 const counter = 1;
-const mockState: Partial<AppState> = { counter };
+const mockState: Partial<Appstate> = { counter };
 
 const apiError = new Error('API Error');
 

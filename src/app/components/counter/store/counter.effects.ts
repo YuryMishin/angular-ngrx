@@ -11,7 +11,7 @@ import {
   saveError,
   saveSuccess,
 } from './counter.actions';
-import { CounterApiService } from '../services/counter-api.service';
+import { CounterApiService } from '../../../core/counter/counter-api.service';
 import { Appstate } from '../../../shared/store/appstate';
 
 @Injectable()

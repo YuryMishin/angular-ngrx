@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 
-import { CounterState } from '../reducers/counter.reducer';
+import { CounterState } from './counter.reducer';
 
 export const increment = createAction('[counter] Increment');
 export const decrement = createAction('[counter] Decrement');
